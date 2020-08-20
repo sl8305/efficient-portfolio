@@ -1,0 +1,9 @@
+.topNav, .footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.topNav p, .footer p {
+    margin: auto;
+}
+
