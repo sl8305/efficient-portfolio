@@ -1,4 +1,8 @@
 .topNav, .footer {
+    padding: 20px;
+}
+
+.row {
     display: flex;
     flex-direction: row;
 }
@@ -7,3 +11,22 @@
     margin: auto;
 }
 
+.marginAuto {
+    margin: auto;
+}
+
+.about {
+    width: 50%;
+}
+
+.bColor1 {
+    background-color: lightcoral;
+}
+
+.bColor2 {
+    background-color: lightblue;
+}
+
+.bColor3 {
+    background-color: lightgreen;
+}
