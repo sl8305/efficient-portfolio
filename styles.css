@@ -7,7 +7,7 @@
     flex-direction: row;
 }
 
-.topNav p, .footer p {
+.topNav a, .footer a {
     margin: auto;
 }
 
@@ -20,13 +20,23 @@
 }
 
 .bColor1 {
-    background-color: lightcoral;
+    background-color: #363537;
 }
 
 .bColor2 {
-    background-color: lightblue;
+    background-color: #107E7D;
 }
 
 .bColor3 {
-    background-color: lightgreen;
+    background-color: #FAE3C6;
+}
+
+
+.icon {
+    height:50px;
+    padding: 10px;    
+}
+
+#myImg {
+    width: 600px;
 }
