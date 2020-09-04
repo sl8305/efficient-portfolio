@@ -1,5 +1,5 @@
 .topNav, .footer {
-    padding: 20px;
+    padding: 10px;
 }
 
 .row {
@@ -16,8 +16,21 @@
 }
 
 .about {
-    width: 50%;
+    width: 30%;
 }
+
+.about h1 {
+    font-size: 70px;
+}
+.about h3 {
+    text-decoration: underline;
+    padding: 30 0 10 0 ;
+}
+.about p {
+    padding: 10 0;
+}
+
+
 
 .bColor1 {
     background-color: #363537;
@@ -25,12 +38,15 @@
 
 .bColor2 {
     background-color: #107E7D;
+    color:white;
+    font-size: x-large;
 }
 
 .bColor3 {
     background-color: #FAE3C6;
+    color: #112A46;
+    font-size: large;
 }
-
 
 .icon {
     height:50px;
@@ -39,4 +55,15 @@
 
 #myImg {
     width: 600px;
+    padding: 50px;
+}
+
+.cardImg {
+    height: 300px;
+    align-content: center;
+}
+
+.projCard {
+    padding: 50px;
+    margin: auto;
 }
