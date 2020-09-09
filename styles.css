@@ -1,3 +1,4 @@
+
 .topNav, .footer {
     padding: 10px;
 }
@@ -16,13 +17,13 @@
 }
 
 .about {
-    width: 30%;
+    width: 40%;
 }
 
 .about h1 {
     font-size: 70px;
 }
-.about h3 {
+.about h3 , .contact h3 {
     text-decoration: underline;
     padding: 30 0 10 0 ;
 }
@@ -55,15 +56,88 @@
 
 #myImg {
     width: 600px;
-    padding: 50px;
+    padding: 100 0;
 }
 
+
+.introduction {
+    display: inline-flex;
+    padding-bottom: 50px;;
+}
+
+.projects{
+    display: inline-flex;
+}
+
+
+
 .cardImg {
-    height: 300px;
+    max-height: 300px;
+    max-width: 300px;
     align-content: center;
+}
+
+.btnGroup {
+    width: 80%;
+    padding: 10;
+    margin: auto;
+}
+
+button {
+    margin: auto;
+    width: 48%;
+    padding: 5;
+    font-weight: bold;
 }
 
 .projCard {
     padding: 50px;
     margin: auto;
+    width: 30%;
+}
+
+.projCard p {
+    padding: 20 0 10 0;
+}
+
+.contact {
+    padding: 50px 20%;
+}
+
+.contact div {
+    display: inline-flex;
+    padding: 20 0;
+}
+
+
+@media screen and (max-width: 800px) {
+    #myImg {
+        width: 100%;
+        padding: 70 0;
+    }
+
+    .contact div {
+        display: inline-block;
+        padding: 20 0;
+    }
+
+    .introduction {
+        display: inline-block;
+    }
+    .introduction div {
+        width: 80%;
+    }
+
+    .projects {
+        display: block;
+    }
+
+    .projCard {
+        width: 80% ;
+        padding: 10%;
+    }
+
+    .contact {
+        padding: 10%;
+    }
 }
