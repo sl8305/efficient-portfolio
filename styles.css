@@ -73,7 +73,7 @@
 
 .cardImg {
     max-height: 300px;
-    max-width: 300px;
+    max-width: 600px;
     align-content: center;
 }
 
@@ -139,5 +139,11 @@ button {
 
     .contact {
         padding: 10%;
+    }
+
+    .cardImg {
+        max-height: 300px;
+        max-width: 300px;
+        align-content: center;
     }
 }
