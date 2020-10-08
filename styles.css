@@ -1,78 +1,144 @@
-.topNav, .footer {
-    padding: 10px;
+
+h1 {
+    font-size: 4.5em;
+}
+h2 {
+    font-size: 2.5em;
+}
+.site-footer-inner , .site-header-inner, .site-banner-inner {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.large-space {
+    padding: 100px 0;
+}
+
+.site-header {
+    background-color: #363537;
+    color: white;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.site-header-inner {
+    display: flex;
+    align-items: center;
+    padding: 30 0;
+}
+/* still needs to style the dropdown menu and options */
+.site-header-menu {
+    margin-left: auto;
+}
+
+/* still need to replace new Banner text */
+.site-banner {
+    padding-top: 113px;
+    background-color: #107E7D;
+    color:white;
+    width:100%;
+}
+.site-banner-inner {
+    display: flex;
+    align-items: center;
+}
+.site-banner-content {
+    padding-right: 50px;
+    margin: auto;
+}
+.site-banner-subtitle{
+    margin: 35px 0;
+}
+.banner-img{
+    width: 100%;
+    border-radius: 6px;   
+}
+#myImg {
+    max-width: 400px;
+    padding: 50px;
+}
+
+
+
+
+
+/* Styling for the backgrounds */
+.background1 {
+    background-color: #363537;
+    color: white;
+    width:100%;
+}
+.background2 {
+    background-color: #107E7D;
+    color:white;
+    width:100%;
+}
+.background3 {
+    background-color: #FAE3C6;
+    color: #112A46;
+    width:100%;
+}
+.icon {
+    height:30px;
+    padding: 10px;    
+}
+
+
+
+
+/* Styling for the Top navbar */
+.topNavContent {
     display: flex;
     flex-direction: row;
 }
-.topNav a, .footer a {
-    margin: auto;
+.topNavContent a {
+    margin: 0 auto;
 }
 
-/* General Use class */
-.marginAuto {
-    margin: auto;
-}
-
-
-/* Background and Text color sets */
-.bColor1 {
-    background-color: #363537;
-}
-.bColor2 {
-    background-color: #107E7D;
-    color:white;
-    font-size: x-large;
-}
-.bColor3 {
-    background-color: #FAE3C6;
-    color: #112A46;
-    font-size: large;
-}
-
-/* Images and icons */
-#myImg {
-    width: 600px;
-    padding: 100 0;
-}
-.icon {
-    height:50px;
-    padding: 10px;    
-}
-.cardImg {
-    max-height: 300px;
-    max-width: 600px;
-    align-content: center;
-}
-
-
-.introduction {
+/* Styling for Intro Section */
+.intro{
     display: inline-flex;
-    padding-bottom: 50px;
+}
+.introImg{
+    width: 50%;
+    margin: auto;
+}
+.introContent{
+    width: 50%;
+    margin: auto;
 }
 
-
-/* About Section */
-.about {
-    width: 40%;
-}
-.about h1 {
+.introContent h1 {
     font-size: 70px;
 }
-.about h3 , .contact h3 {
-    text-decoration: underline;
+.introContent h3 , .contact h3 {
+    font-size: 25px;
+    font-weight: bold;
     padding: 30 0 10 0 ;
 }
-.about p {
+.introContent p {
+    font-size: 25px;;
     padding: 10 0;
+}
+
+
+/* Images and icons */
+.cardImg {
+    max-height: 300px;
+    max-width: 300px;
+    align-content: center;
 }
 
 /* Project Section */
 .projects{
-    display: inline-flex;
+    display: inline-block;
 }
 .projCard {
     padding: 50px;
     margin: auto;
     width: 30%;
+    display: inline-block;
 }
 .projCard p {
     padding: 20 0 10 0;
@@ -105,6 +171,25 @@
     display: inline-flex;
     padding: 20 0;
 }
+
+.site-footer {
+    background-color: #363537;
+    color: white;
+    width:100%;
+}
+.site-footer-inner{
+    text-align: center;
+    padding: 20;
+}
+
+@media screen and (min-width: 1921px) {
+    .site-footer-inner {
+        padding: 50 0;
+    }
+}
+
+
+
 
 /* Mobile Responsive styling */
 @media screen and (max-width: 800px) {
