@@ -5,7 +5,7 @@ h1 {
 h2 {
     font-size: 2.5em;
 }
-.site-footer-inner , .site-header-inner, .site-banner-inner, .skillset-inner, .contact-inner {
+.site-footer-inner , .site-header-inner, .site-banner-inner, .skillset-inner, .projects-inner, .contact-inner {
     width: 92%;
     margin: 0 auto;
 }
@@ -31,6 +31,11 @@ h2 {
     align-items: center;
     padding: 30 0;
 }
+.site-header-title{
+    font-size: 3em;
+    text-decoration: none;
+    color: white;
+}
 /* still needs to style the dropdown menu and options */
 .site-header-menu {
     margin-left: auto;
@@ -39,7 +44,7 @@ h2 {
 /* still need to replace new Banner text */
 .site-banner {
     padding-top: 113px;
-    background-color: #107E7D;
+    background-color: #0066c0;
     color:white;
     width:100%;
 }
@@ -169,17 +174,52 @@ h2 {
 }
 
 /* Project Section */
-.projects{
-    display: inline-block;
+.projects {
+    background-color: #0066c0;
+    width: 100%;
+    color: white;
+}
+.projects-title{
+    padding-bottom: 1.5em;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.projects-grid {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .projCard {
-    padding: 50px;
-    margin: auto;
-    width: 30%;
-    display: inline-block;
+    padding-top: 2em;
+    flex: none;
+    width: 33.3%;
 }
-.projCard p {
-    padding: 20 0 10 0;
+
+.card{
+    max-width: 300px;
+    max-height: 200px;
+    display: flex;
+    flex-shrink: 1;
+    margin: auto;
+    padding: 12px;
+}
+@media screen and (max-width: 800px) {
+    .projects-title{
+        font-size: 2.5em;
+    }
+    #unravelImg{
+        height: fit-content;
+    }
+    .projects-grid{
+        width: 100%;
+    }
+    .projCard{
+        padding-top: 4em;
+        width:100%;
+    }
 }
 /* Project Card Button Groups */
 .btnGroup {
@@ -266,32 +306,3 @@ h2 {
         padding: 50 0;
     }
 }
-
-
-
-
-/* Mobile Responsive styling
-@media screen and (max-width: 800px) {
-
-
-    .projects {
-        display: block;
-    }
-
-    .projCard {
-        width: 80% ;
-        padding: 10%;
-    }
-
-
-    .cardImg {
-        max-height: 300px;
-        max-width: 300px;
-        align-content: center;
-    }
-
-    .btnGroup a {
-        margin: 10;
-        padding: 10;
-    }
-} */
