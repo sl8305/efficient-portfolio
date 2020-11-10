@@ -143,7 +143,7 @@ nav {
 .banner-center {
     width: 70%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 200px 0;
     display: flex;
 }
 
@@ -184,6 +184,7 @@ nav {
     }   
     .banner-center {
         display: block;
+        padding: 100px 0;
     }
     .site-banner-text, .site-banner-text h1, .site-banner-text h2{
         margin: 0;
@@ -203,7 +204,7 @@ nav {
 
 .skillset-center {
     width: 80%;
-    padding: 100px 0 ;
+    padding: 200px 0 ;
     margin: 0 auto;
 }
 
@@ -231,11 +232,11 @@ nav {
     font-size: 1.5em;
     margin: 5px;
     list-style: none;
+    letter-spacing: 2px;
 }
 .skillset-1{
     border: 4px solid grey;
     border-radius: 25px 0 0 25px;
-    
 }
 .skillset-2{
     border-top: 4px solid grey;
@@ -245,10 +246,14 @@ nav {
     border: 4px solid grey;
     border-radius: 0 25px 25px 0;
 }
+
 @media screen and (max-width: 800px) {
     .skillset-content{
         display: block;
         padding: 0;
+    }
+    .skillset-center {
+        padding: 100px 0;
     }
     .column {
         width: 90%;
@@ -267,6 +272,20 @@ nav {
 }
 
 
+#projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0066c0;
+    color: white;
+    width: 100%;
+}
+
+.projects-center {
+    width: 80%;
+    padding: 200px 0 ;
+    margin: 0 auto;
+}
 
 /* Images and icons */
 .cardImg {
@@ -275,12 +294,7 @@ nav {
     align-content: center;
 }
 
-/* Project Section */
-.projects {
-    background-color: #0066c0;
-    width: 100%;
-    color: white;
-}
+
 .projects-title{
     padding-bottom: 1.5em;
     width: 80%;
@@ -346,13 +360,12 @@ nav {
 
 
 /* Contact section */
-.contact-inner {
-    display: flex;
-    align-items: center;
+.contact-center {
+    width: 80%;
+    padding: 200px 0 ;
+    margin: 0 auto;
 }
-.contact-content {
-    margin-left: auto;
-}
+
 .contact-content-links {
     width: 50%;
 }
