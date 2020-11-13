@@ -19,6 +19,7 @@ h2 {
 
 .icon {
     height: 30px;
+    margin: 10px;
 }
 
 
@@ -175,7 +176,7 @@ nav {
 }
 
 @media screen and (max-width: 768px){
-    h1{  font-size: 1.75em;      }
+    h1{  font-size: 1.75em;   }
     h2{  font-size: 1.25em;   }
     #myImg{
         width: 250px;
@@ -192,7 +193,7 @@ nav {
     }
 }
 
-
+/* //////////////////////  Skillset ////////////////////// */
 #skillset{
     display: flex;
     justify-content: space-around;
@@ -260,6 +261,10 @@ nav {
         padding: 25px 0px;
         margin: 35px auto;
     }
+    .skills-list li {
+        font-size: 1em;
+        margin: 10px 0;
+    }
     .skillset-title {
         padding: 15px 0px;
         width: 80%;
@@ -285,56 +290,45 @@ nav {
     width: 80%;
     padding: 200px 0 ;
     margin: 0 auto;
-}
-
-/* Images and icons */
-.cardImg {
-    max-height: 300px;
-    max-width: 300px;
-    align-content: center;
-}
-
-
-.projects-title{
-    padding-bottom: 1.5em;
-    width: 80%;
-    margin: auto;
     text-align: center;
 }
 
 .projects-grid {
-    width: 80%;
-    margin: auto;
+    margin: 100px auto;
     display: flex;
     flex-wrap: wrap;
 }
 .projCard {
-    padding-top: 2em;
     flex: none;
-    width: 33.3%;
+    margin: 30px;
+    width: 400px;
+    height: 300px;
+    background: darkblue;
+    border-radius: 12px;
 }
 
 .card{
-    max-width: 300px;
-    max-height: 200px;
+    height: 100%;
+    max-width: 100%;
     display: flex;
     flex-shrink: 1;
     margin: auto;
-    padding: 12px;
+    border-radius: 12px;
 }
+
 @media screen and (max-width: 800px) {
-    .projects-title{
-        font-size: 2.5em;
+    .projects-center {
+        padding: 100px 0;
     }
     #unravelImg{
         height: fit-content;
     }
     .projects-grid{
-        width: 100%;
+        margin: 50px auto;
     }
     .projCard{
-        padding-top: 4em;
-        width:100%;
+        margin: 40px 0;
+        width:100%; 
     }
 }
 /* Project Card Button Groups */
@@ -359,54 +353,52 @@ nav {
 
 
 
-/* Contact section */
+/* //////////////////////  CONTACT ////////////////////// */
 .contact-center {
     width: 80%;
     padding: 200px 0 ;
     margin: 0 auto;
-}
-
-.contact-content-links {
-    width: 50%;
+    text-align: center;
 }
 .contact-content-links ul {
-    /* display: block; */
-    width: 25%;
-    margin: 0 auto 25 auto;
+    padding: 50px 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
 }
+
 .contact-content-links a {
     font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
 }
+
 .contact-content-subtitle {
     margin: 35px 0;
 }
+
+/* TODO: change depending on img file */
 .list-icon img {
     max-width: 22px;
     max-height: 22px;
     margin-right: 15px;
 }
+
 @media screen and (max-width: 800px) {
-    .contact-inner {
+    .contact-center {
+        padding: 100px 0;
+    }
+    .contact-content-links ul {
         display: block;
+        padding: 25px 0;
     }
-    .contact-content, .contact-content-links{
-        width:100%;
-    }
-    .contact-content-title {
-        font-size: 3.5em;
-        text-align: center;
-    }
-    .contact-content-subtitle {
-        font-size: 2em;
-        text-align: center;
-    }
-    .contact-content-links ul{
-        width: 40%;
+    .contact-content-links li {
+        margin: 20px;
     }
 }
 
 
-/* Footer Style */
+/* //////////////////////  FOOTER ////////////////////// */
 .site-footer {
     background-color: #363537;
     color: white;
@@ -420,4 +412,10 @@ nav {
     .site-footer-inner {
         padding: 50 0;
     }
+}
+
+
+/* borders */
+#skillset, #projects, #contact, footer {
+    border-top: 2px solid black;
 }
