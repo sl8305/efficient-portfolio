@@ -28,7 +28,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 10vh;
     background-color: #363537;
     font-family: 'Montserrat', sans-serif;
 }
@@ -50,11 +50,11 @@ nav {
     list-style: none;
 }
 
-.nav-links a{
+.nav-link-item{
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .mobile-nav{
@@ -78,7 +78,6 @@ nav {
         width: 50%;
     }
 }
-
 @media screen and (max-width: 768px){
     body {
         overflow-x: hidden;
@@ -221,6 +220,7 @@ nav {
     text-align: center;
 }
 .skillset-title {
+    font-family: 'Montserrat', sans-serif;
     padding: 25px 0px;
     width: 80%;
     margin: auto;
@@ -276,7 +276,7 @@ nav {
     }
 }
 
-
+/* //////////////////////  Projects ////////////////////// */
 #projects {
     display: flex;
     justify-content: space-around;
@@ -291,30 +291,79 @@ nav {
     padding: 200px 0 ;
     margin: 0 auto;
     text-align: center;
+    justify-content: center;
+}
+.projects-center h1 {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.projects-grid {
-    margin: 100px auto;
+.projects-list {
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-.projCard {
-    flex: none;
-    margin: 30px;
-    width: 400px;
+
+.projects-content {
+    position: relative;
+    width: 30%;
+    margin: 5% 1%;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.projects-content img {
+    width: 100%;
     height: 300px;
-    background: darkblue;
+}
+
+/* Background that transitions in with the details */
+.projects-content .projects-content-overlay {
+    background: lightcoral;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.projects-content:hover .projects-content-overlay {
+    height: 100%;
+    opacity: 1;
+}
+
+/* centering the details of the card */
+.projects-content-details {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    padding: 0 16px;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+
+/* display the details when hovering over project cards */
+.projects-content:hover .projects-content-details{
+    top: 50%;
+    left: 50%;
+    opacity:1;
+}
+
+.rounded {
     border-radius: 12px;
 }
 
 .card{
     height: 100%;
     max-width: 100%;
-    display: flex;
-    flex-shrink: 1;
-    margin: auto;
-    border-radius: 12px;
 }
+
 
 @media screen and (max-width: 800px) {
     .projects-center {
@@ -323,34 +372,19 @@ nav {
     #unravelImg{
         height: fit-content;
     }
-    .projects-grid{
+    .projects-list{
         margin: 50px auto;
+        display: block;
     }
-    .projCard{
-        margin: 40px 0;
-        width:100%; 
+    .projects-content {
+        width: 100%;
+        margin: 15% 0;
+    }
+    .projects-content img {
+        width: 100%;
+        height: 250px;
     }
 }
-/* Project Card Button Groups */
-.btnGroup {
-    width: 80%;
-    padding: 10;
-    margin: auto;
-}
-/* Styling for project links */
-.btnGroup a {
-    width: 30%;
-    margin: 0 15;
-    display: inline-block;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 15px;
-    outline: none;
-    color: #ffffff;
-    background-color: #7aa8b7;
-}
-
 
 
 /* //////////////////////  CONTACT ////////////////////// */
@@ -360,6 +394,7 @@ nav {
     margin: 0 auto;
     text-align: center;
 }
+
 .contact-content-links ul {
     padding: 50px 0;
     display: flex;
@@ -367,15 +402,17 @@ nav {
     justify-content: space-around;
 }
 
-.contact-content-links a {
+.contact-content-links a, .contact-content-links p {
     font-size: 1.5em;
     text-decoration: none;
     font-weight: bold;
+    color: darkblue;
 }
 
 .contact-content-subtitle {
     margin: 35px 0;
 }
+
 
 /* TODO: change depending on img file */
 .list-icon img {
@@ -393,7 +430,7 @@ nav {
         padding: 25px 0;
     }
     .contact-content-links li {
-        margin: 20px;
+        margin: 40px 0;
     }
 }
 
