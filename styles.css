@@ -153,12 +153,12 @@ nav {
 }
 
 .site-banner-text h1, .site-banner-text h2{
-    width: 80%;
+    width: 90%;
     padding: 20 0;
 }
 
 #myImg {
-    max-width: 600px;
+    max-width: 500px;
     border-radius: 25px;
 }
 
