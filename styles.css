@@ -28,7 +28,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 10vh;
+    min-height: 8vh;
     background-color: #363537;
     font-family: 'Montserrat', sans-serif;
 }
@@ -204,7 +204,7 @@ nav {
 
 .skillset-center {
     width: 80%;
-    padding: 200px 0 ;
+    padding: 150px 0 ;
     margin: 0 auto;
 }
 
@@ -282,7 +282,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: #0066c0;
-    color: white;
+    color: black;
     width: 100%;
 }
 
@@ -295,6 +295,7 @@ nav {
 }
 .projects-center h1 {
     font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 
 .projects-list {
@@ -318,9 +319,15 @@ nav {
     height: 300px;
 }
 
+#unravelImg{
+    border-radius: 12px;
+    height: 100%;
+    max-width:200px;
+}
+
 /* Background that transitions in with the details */
 .projects-content .projects-content-overlay {
-    background: lightcoral;
+    background:#FCCA74;
     position: absolute;
     width: 100%;
     height: 0;
@@ -338,14 +345,29 @@ nav {
 /* centering the details of the card */
 .projects-content-details {
     position: absolute;
-    width: 100%;
+    width: 80%;
     top: 20%;
     left: 50%;
     text-align: center;
-    padding: 0 16px;
     opacity: 0;
     transform: translate(-50%, -50%);
     transition: all 0.5s ease-in-out;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.projects-content-details p{
+    margin: 40px 0;
+}
+
+.projBtn {
+    text-decoration: none;
+    border: 2px solid #0066c0;
+    border-radius: 25px;
+    /* /* margin-top: 20px;  */
+    padding: 5px; 
+    background: #0066c0;
+    color: #fff; 
 }
 
 /* display the details when hovering over project cards */
@@ -383,6 +405,10 @@ nav {
     .projects-content img {
         width: 100%;
         height: 250px;
+    }
+    .projects-content-details {
+        font-size: 1em;
+        width: 90%;
     }
 }
 
